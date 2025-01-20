@@ -1,0 +1,68 @@
+name: flutter_design_system
+description: "flutter design system"
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  super_tooltip: 2.0.8
+  flutter_svg: 2.0.10+1
+  fluttertoast: 8.2.8
+  gap: 3.0.1
+  intl: 0.19.0
+  custom_refresh_indicator: 4.0.1
+  table_calendar: 3.1.2
+  widgetbook: 3.9.0
+  widgetbook_annotation: 3.2.0
+  flutter_bounceable: 1.2.0
+  format: 1.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 5.0.0
+  build_runner: 2.4.14
+  widgetbook_generator: 3.9.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/icons/
+    - assets/icons/chevrons/
+    - assets/icons/emoji/
+    - assets/icons/empty/
+    - assets/icons/normal/
+    - assets/icons/sns/
+    - assets/icons/tab_bar/
+    - assets/icons/palette/
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: Pretendard
+      fonts:
+        - asset: assets/fonts/pretendard/Pretendard-Thin.otf
+          weight: 100
+        - asset: assets/fonts/pretendard/Pretendard-ExtraLight.otf
+          weight: 200
+        - asset: assets/fonts/pretendard/Pretendard-Light.otf
+          weight: 300
+        - asset: assets/fonts/pretendard/Pretendard-Regular.otf
+          weight: 400
+        - asset: assets/fonts/pretendard/Pretendard-Medium.otf
+          weight: 500
+        - asset: assets/fonts/pretendard/Pretendard-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/pretendard/Pretendard-Bold.otf
+          weight: 700
+        - asset: assets/fonts/pretendard/Pretendard-ExtraBold.otf
+          weight: 800
+        - asset: assets/fonts/pretendard/Pretendard-Black.otf
+          weight: 900
