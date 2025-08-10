@@ -1,12 +1,15 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_design_system/extentions/custom_scroll_behavior.dart';
 import 'package:flutter_design_system/main.directories.g.dart';
 import 'package:flutter_design_system/themes/f_colors.dart';
 import 'package:flutter_design_system/themes/f_theme.dart';
-import 'package:flutter/material.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeDateFormatting('ko', null);
   runApp(const WidgetBookApp());
 }
 
@@ -14,7 +17,8 @@ void main() {
 class WidgetBookApp extends StatelessWidget {
   const WidgetBookApp({super.key});
 
-  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+  static final GlobalKey<NavigatorState> navigatorKey =
+      GlobalKey<NavigatorState>();
 
   @override
   Widget build(BuildContext context) {
